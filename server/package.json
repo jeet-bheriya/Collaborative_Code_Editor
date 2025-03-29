@@ -1,0 +1,26 @@
+{
+  "name": "collaborative_code_editor",
+  "version": "1.0.0",
+  "description": "Collaborative Code Editor",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd client && npm start\" \"cd server && npm start\"",
+    "install-all": "cd client && npm install && cd ../server && npm install",
+    "build": "cd client && npm run build",
+    "deploy": "cd client && vercel --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeet-bheriya/Collaborative_Code_Editor.git"
+  },
+  "keywords": [],
+  "author": "Jeet Bheriya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeet-bheriya/Collaborative_Code_Editor/issues"
+  },
+  "homepage": "https://github.com/jeet-bheriya/Collaborative_Code_Editor#readme",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
